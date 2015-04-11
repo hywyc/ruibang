@@ -1,0 +1,330 @@
+body {
+
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 25px;
+	color: #666666;
+	font-family: Arial;
+
+}
+body {
+	background-image: url(../images/bgr_wrapper_top.png);
+}
+
+.{
+
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 25px;
+	color: #555555;
+	font-family: Arial;
+
+}
+a {
+	font-size:15px;
+		text-decoration: none;
+	line-height: 25px;
+	color: #585858;
+		font-weight: normal;
+		font-family: Arial;
+
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: underline;
+	
+		
+	}
+
+.css {
+	font-size: 12px;
+
+}
+.small {
+	font-size: 12px;
+	color: #010000;
+	font-family: Arial;
+}
+.smallhui {
+	font-size: 13px;
+	color: #919191;
+	font-family: Arial;
+}
+.redbox {
+	font-size: 12px;
+	color: #FFFFFF;
+	font-family: Arial;
+	background-color: #B6B7BB;
+	border: 1px dashed #715928;
+	SCROLLBAR-ARROW-COLOR:#FFFFFF;
+	SCROLLBAR-FACE-COLOR:#333333;
+	SCROLLBAR-DARKSHADOW-COLOR:#4F5253;
+	SCROLLBAR-HIGHLIGHT-COLOR:#4F5253;
+	SCROLLBAR-3DLIGHT-COLOR:#4F5253;
+	SCROLLBAR-SHADOW-COLOR:#4F5253;
+	SCROLLBAR-TRACK-COLOR:#4F5253;
+
+	padding-top: 10px :
+; 	line-height: 15px;
+	
+}
+.logi {
+	font-size: 12px;
+	height: 16px;
+	cursor: hand;
+	color: #333333;
+	border: 1px solid #CCCCCC;
+}
+.logibig {
+	font-size: 12px;
+	line-height: 15px;
+	height: 150px;
+	border: 1px solid #CCCCCC;
+	cursor: hand;
+	color: #333333;
+}
+.ta {
+	font-size: 14px;
+	
+	background-color: #8D8D8D;
+	width:230px;
+	height:20px;
+
+	border: 0px solid #6B92B5;
+	cursor: hand;
+	font-family: Arial;
+
+	color: #FFFFFF;
+	}
+	
+	.blue {
+	font-size: 14px;
+	
+	background-color: #8D8D8D;
+	width:230px;
+
+
+	border: 0px solid #6B92B5;
+	cursor: hand;
+	font-family: Arial;
+
+	color: #FFFFFF;
+	}
+.font {
+	font-size:15px;
+		
+	line-height: 25px;
+	color: #333333;
+		font-weight: normal;
+		font-family: Arial;
+	
+}
+.font25px {
+	font-size:15px;
+			line-height: 25px;
+	color: #ffffff;
+		font-weight: normal;
+		font-family: Arial;
+	
+}
+
+.english {
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 20px;
+	color: #FFFF00;
+	font-family: Verdana;
+	
+}
+.fontenglish {
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 20px;
+	color: #666666;
+		font-family: Arial;
+
+	
+}
+.font11 {
+	font-size:15px;
+		text-decoration: none;
+	line-height: 25px;
+	color: #333333;
+		font-weight: normal;
+		font-family: Arial;
+	
+}
+.yellow {
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 20px;
+	color: #CCCC00;
+	
+}
+
+
+.white {
+	font-size: 12px;
+	color: #FFFFFF;
+	font-family: Arial;
+	line-height: 25px;
+		
+}
+.white12 {
+	font-size: 14px;
+	color: #333333;
+	font-family: Arial;
+	line-height: 25px;
+	font-weight: bold;
+			
+}
+.whitehui12 {
+	font-size: 12px;
+	color: #666666;
+	font-family: Arial;
+		
+}
+.MS Mincho {
+	font-size: 12px;
+color: #333333;
+	font-family: MS Mincho;
+		
+}
+
+.whitehui {
+	font-size: 16px;
+	font-family: Arial;
+	color: #FFFFFF;
+	line-height: 18px;
+	font-weight: normal;
+	
+}
+.whitehui1 {
+	font-size: 12px;
+	font-family: Arial;
+	color: #8F8A7B;
+	line-height: 18px;
+	
+}
+.whitehuibig {
+		text-decoration: none;
+	line-height: 25px;
+	color: #333333;
+		font-weight: normal;
+		font-family: Arial;
+	
+}
+.green {
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 25px;
+	color: #0066CC;
+	font-family: Arial;
+	
+}
+.bule {
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 20px;
+	color: #003366;
+	
+}
+
+.orangerbig {
+	font-size:15px;
+		text-decoration: none;
+	line-height: 25px;
+	color: #FFFFFF;
+		font-weight: normal;
+		font-family: Arial;
+	
+}
+.1oranger12 {
+	font-size:15px;
+		text-decoration: none;
+	line-height: 25px;
+	color: #585858;
+		font-weight: normal;
+		font-family: Arial;
+	
+}
+.1oranger25 {
+	font-size:25px;
+		text-decoration: none;
+	line-height: 25px;
+	color: #585858;
+		font-weight: normal;
+		font-family: Arial;
+	
+}.1oranger25white {
+	font-size:25px;
+		text-decoration: none;
+	line-height: 25px;
+	color: #ffffff;
+		font-weight: normal;
+		font-family: Arial;
+	
+}
+
+
+
+.newtitle {
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 20px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: Arial;
+	
+}
+.table {
+	font-size: 12px;
+	line-height:20px;
+	text-decoration: none;
+	border: 1px solid #E8E8E8;
+}
+.table2 {
+	font-size: 12px;
+	text-decoration: none;
+	border: 1px solid #666666;
+}
+.table22 {
+	font-size: 12px;
+	text-decoration: none;
+	border: 1px solid #CECBCE;
+	background-color: #FFFFCE;
+}
+
+.table3 {
+	font-size: 12px;
+	line-height:20px;
+	text-decoration: none;
+	background-color: #CEDBFF;
+	border: 1px solid #CECBCE;
+}
+
+.table4 {
+	font-size: 12px;
+	line-height:20px;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style:solid;
+	border-left-style: none;
+	border-bottom-color: #BCBABD;
+}
+
+
+
+.left{float:left;}
+.right{ float:right;}
+
+
+.flash{ width:1280px; height:646px;}
+
+.content{ width:100%; height:auto;  left:0px;  position:absolute; bottom:56px; } 
+
+.ny_content{ width:968px; height:475px; border:solid 1px #fff; background:url(../images/ny_center_bj.jpg) repeat-x left top; margin:0 auto; }
+
+#main{ border:medium none;left:50%;margin:0 auto 0 -640px;overflow:hidden;padding:0;position:relative;visibility:visible;width:1280px;}

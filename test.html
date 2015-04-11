@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript"  src="3rd/underscore.js" ></script>
+    <script type="text/javascript " src="test.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var f=function fact(x){if(x<=1) return 1; else return x*fact(x-1);}
+
+    var strict=(function(){return !this;});
+    console.log("is strict "+strict());
+
+    var o={
+        m:function(){
+            var self=this;
+            console.log(this===o);
+
+            f();
+            function f(){
+                console.log(this===o);
+                console.log(self===o);
+            }
+        }
+    }
+
+    o.m();
+
+
+    function inherit(p){
+        if(p==null) throw TypeError;
+        if(Object.create)
+            return Object.create(p);
+        var t=typeof  p;
+        if(t!="object" && t!="function")
+            throw  TypeError;
+        function f(){
+
+        }
+        f.prototype=p;
+        return new f();
+    }
+
+
+    var point={
+        x:1,
+        y:2,
+        get r(){ return Math.sqrt(this.x*this.x+this.y*this.y)},
+        set r(newval){
+
+        }
+    }
+
+    point.x=3;
+
+    var point2=inherit(point);
+    point2.x=4;
+
+    var o1={
+        $n:1,
+        get next(){console.log("getter"); return this.$n++;},
+        set next(n){
+            console.log("setter");
+            if(n>=this.$n) this.$n=n;
+            else throw "序列号的值不能比当前值小";
+
+        }
+    }
+
+    o1.next;
+    o1.next=3;
+
+    console.log(Object.getOwnPropertyDescriptor(point,"x"));
+    console.log(Object.getOwnPropertyDescriptor(o1,"next"));
+    console.log(Object.getOwnPropertyDescriptor({},"toString"));
+    console.log(Object.getOwnPropertyNames(Object.prototype));
+
+    var o2={};
+    Object.defineProperty(o2,"x",{value:1,writable:true,enumerable:false,configurable:true});
+    o2.x=2323;
+    console.log(o2.x);
+    Object.defineProperty(o2,"x",{value:2});
+    console.log(o2.x);
+    Object.defineProperty(o2,"x",{get:function(){return 0;}});
+    console.log(o2.x);
+
+    console.log(Object.prototype.isPrototypeOf({}));
+    console.log(JSON.stringify(o1));
+    console.log((new Date()).valueOf());
+
+
+    Array.prototype.sayname=function(){console.log("is array");};
+    console.log((new Array).sayname());
+
+    console.log("Array is extensible: "+ Object.isExtensible(Array));
+    console.log(typeof  []);
+
+    function range(from,to){
+        var o=inherit(range.methods);
+        o.from=from;
+        o.to=to;
+        return o;
+    }
+
+    range.methods={
+        includes: function (x) {
+            return this.from<=x && this.to>=x;
+        },
+        foreach:function(f){
+            for(var x=Math.ceil(this.from);x<this.to;x++)
+                f(x);
+        },
+        dd:"shdfjsdhf"
+    };
+
+    var range1=range(0,3);
+    //range1.foreach(console.log);
+    //console.log(range1.includes(4));
+
+    function Range(from,to){
+        this.from=from;
+        this.to=to;
+    }
+
+    Range.prototype={
+        includes:function(x) {
+            return this.from<=x && this.to>=x;
+        },
+        foreach:function(f){
+            for(var x=Math.ceil(this.from);x<this.to;x++)
+                f(x);
+        }
+    }
+
+    var oo={x:1};
+    var aa={};
+    aa.prototype=oo;
+    var bb={};
+    bb.prototype=oo;
+    //console.log(aa instanceof  oo);
+    //console.log(bb instanceof  oo);
+
+    function fn(o) {
+       console.log(o);
+    }
+
+    fn.call("call function");
+
+</script>
+
+hello
+
+</body>
+</html>
